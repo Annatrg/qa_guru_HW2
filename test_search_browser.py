@@ -10,5 +10,5 @@ def test_result_is_found(browser_window_config):
 
 def test_result_not_found(browser_window_config):
     browser.open('https://google.com')
-    browser.element('[name="q"]').should(be.blank).type('homework3_notfounderror_terytgue').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('homework3_notfounderror_homework3').press_enter()
     browser.element('[class="card-section"]').should(have.text('По запросу  ничего не найдено. '))
